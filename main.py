@@ -3,12 +3,14 @@ from reminder import Reminder
 from functools import wraps
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 import os
 
-#FILE NAME FOR DATABASE
-TOKEN = os.environ['TOKEN']
-CHANNEL_ID_general = int(os.environ['CHANNEL_ID_general'])
-CHANNEL_ID_notifications = int(os.environ['CHANNEL_ID_notifications'])
+#Setup
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+CHANNEL_ID_general = int(os.getenv("CHANNEL_ID_general"))
+CHANNEL_ID_notifications = int(os.getenv("CHANNEL_ID_notifications"))
 file_name = "database.xlsx"
 
 
