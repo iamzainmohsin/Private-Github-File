@@ -1,1 +1,0 @@
-os.getenv("CHANNEL_ID_notifications")
