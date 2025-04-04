@@ -1,13 +1,13 @@
 from database import ExcelHandler, Task
 from reminder import Reminder
 from config import TOKEN, CHANNEL_ID_general, CHANNEL_ID_notifications
-from keep_alive import keep_alive
+# from keep_alive import keep_alive
 from functools import wraps
 import discord
 from discord.ext import commands
 
 #FILE NAME FOR DATABASE
-keep_alive()
+# keep_alive()
 file_name = "database.xlsx"
 
 
