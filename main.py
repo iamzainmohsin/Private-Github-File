@@ -44,7 +44,7 @@ async def on_ready():
     if notification_channel:
         await notification_channel.send("✅ Reminder system is now active!")
 
-    bot.loop.create_task(reminder.refresh_tasks(30))  # Refresh every 5 minutes
+    bot.loop.create_task(reminder.refresh_tasks(300))  # Refresh every 5 minutes
     bot.loop.create_task(reminder.schedule_all_reminders())  # Continuously check for new reminders
     print("Reminder system has started!")
 
