@@ -104,11 +104,11 @@ class Reminder():
 
         # Intervals for different frequencies (in seconds)
         intervals = {
-        "Immediate Warning": 60,
-        "Hourly Reminder": 120,       # 1 hour -->3600
-        "Every 4 Hours": 180,       # 4 hours --> 14400
-        "Daily Reminder": 240,      # 24 hours --> 86400
-        "Weekly Reminder": 300     # 7 days --> 604800
+        "Immediate Warning": 0,
+        "Hourly Reminder": 3600,       # 1 hour -->3600
+        "Every 4 Hours": 14400,       # 4 hours --> 14400
+        "Daily Reminder": 86400,      # 24 hours --> 86400
+        "Weekly Reminder": 604800     # 7 days --> 604800
     }
         interval = intervals.get(frequency, None)
 
